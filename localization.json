@@ -1,0 +1,54 @@
+{
+  "Sheet1": [
+    {
+      "TCID": "1",
+      "TITLE/DESC": "Get single student data",
+      "URI": "http://localhost:3000/Students/1",
+      "HTTP request": "Get",
+      "Authentication": "NA",
+      "REQUEST PAYLOAD": "NA",
+      "RESPONSE PAYLOAD": "{\n        \"ID\": \"1\",\n        \"Name\": \"TARA\",\n        \"Gender\": \"1\",\n        \"Class\": \"10\",\n        \"Strength\": \"0\",\n        \"Hairstyle\": \"1\",\n        \"Color\": \"Brown\"\n    }",
+      "STATUS CODE": "200"
+    },
+    {
+      "TCID": "2",
+      "TITLE/DESC": "Get all student data",
+      "URI": "http://localhost:3000/Students",
+      "HTTP request": "Get",
+      "Authentication": "NA",
+      "REQUEST PAYLOAD": "NA",
+      "RESPONSE PAYLOAD": "{\n \"Students\":[\n \n {\n  \"ID\": \"1\",\n  \"Name\": \"Jyoti\",\n  \"Gender\": \"1\",\n  \"Class\": \"10\",\n  \"Strength\": \"0\",\n  \"Hairstyle\": \"1\",\n  \"Color\": \"Brown\"\n },\n\n\n {\n\n  \"ID\": \"2\",\n  \"Name\": \"Sushi\",\n  \"Gender\": \"0\",\n  \"Class\": \"12\",\n  \"Strength\": \"0\",\n  \"Hairstyle\": \"1\",\n  \"Color\": \"Black\"\n\n }\n     ]\n\n}",
+      "STATUS CODE": "200"
+    },
+    {
+      "TCID": "3",
+      "TITLE/DESC": "Create new Student ",
+      "URI": "http://localhost:3000/Students",
+      "HTTP request": "Post",
+      "Authentication": "NA",
+      "REQUEST PAYLOAD": "\n {\n\n  \"Name\": \"Chandra\",\n  \"Gender\": \"0\",\n  \"Class\": \"12\",\n  \"Strength\": \"0\",\n  \"Hairstyle\": \"1\",\n  \"Color\": \"Blue\"\n\n }\n",
+      "RESPONSE PAYLOAD": "\n {\n\n  \"Name\": \"Chandra\",\n  \"Gender\": \"0\",\n  \"Class\": \"12\",\n  \"Strength\": \"0\",\n  \"Hairstyle\": \"1\",\n  \"Color\": \"Blue\"\n\n },\n\"ID\": \"3\"\n",
+      "STATUS CODE": "201"
+    },
+    {
+      "TCID": "4",
+      "TITLE/DESC": "Update student ",
+      "URI": "http://localhost:3000/Students/3",
+      "HTTP request": "Put",
+      "Authentication": "NA",
+      "REQUEST PAYLOAD": "\n {\n\n  \"Name\": \"Chandra\",\n  \"Gender\": \"0\",\n  \"Class\": \"11\",\n  \"Strength\": \"0\",\n  \"Hairstyle\": \"1\",\n  \"Color\": \"Green\"\n\n }\n",
+      "RESPONSE PAYLOAD": "\n {\n\n  \"Name\": \"Chandra\",\n  \"Gender\": \"0\",\n  \"Class\": \"11\",\n  \"Strength\": \"0\",\n  \"Hairstyle\": \"1\",\n  \"Color\": \"Green\"\n\n },\n\"ID\": \"3\"\n",
+      "STATUS CODE": "201"
+    },
+    {
+      "TCID": "5",
+      "TITLE/DESC": "Delete",
+      "URI": "http://localhost:3000/Students/3",
+      "HTTP request": "Delete",
+      "Authentication": "NA",
+      "REQUEST PAYLOAD": "NA",
+      "RESPONSE PAYLOAD": "{}",
+      "STATUS CODE": "200"
+    }
+  ]
+}
